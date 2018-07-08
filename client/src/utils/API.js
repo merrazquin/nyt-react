@@ -13,7 +13,7 @@ export default {
         if (endYear) {
             end_date = `&end_date=${endYear}1231`
         }
-        return axios.get(`//api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${process.env.REACT_APP_NYT_API}&fq=document_type:("article")&q=${topic}${begin_date}${end_date}`, {withCredentials: true})
+        return axios.get(`//api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${process.env.REACT_APP_NYT_API}&fq=document_type:("article")&q=${topic}${begin_date}${end_date}`)
     },
 
     getSavedArticles: function () {
