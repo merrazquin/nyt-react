@@ -33,7 +33,6 @@ class Articles extends Component {
     }
 
     saveArticle = (title, date, url) => {
-        console.log('SAVE')
         API.saveArticle({ title: title, date: date, url: url })
             .then(res => this.loadSavedArticles())
             .catch(err => console.log(err))
