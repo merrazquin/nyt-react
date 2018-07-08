@@ -1,0 +1,16 @@
+.delete-btn, .save-btn, .view-btn {
+    cursor: pointer;
+    float: right;
+    margin-left: 15px;
+}
+.delete-btn {
+  color: #e74944;
+}
+
+.save-btn {
+    color: #2A878C;
+}
+
+.view-btn:hover {
+    text-decoration: none;
+}
